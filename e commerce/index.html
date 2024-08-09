@@ -1,0 +1,103 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanCrafts - Handcrafted Goods</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <p style="color: rgb(25, 227, 59);">``URBANCRAFTS</p>
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="artisan.html">Artisans</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover Unique Handcrafted Goods</h1>
+            <p>Shop sustainably crafted items made by local artisans.</p>
+            <a href="shop.html" class="btn">Shop Now</a>
+        </section>
+
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="homedecor.jpg" alt="Home Decor">
+                    <a href="shop.html" class="btn">Home Decor</a>
+                </div>
+                <div class="category-item">
+                    <img src="fashion.jpg" alt="Fashion">
+                    <a href="shop.html" class="btn">Fashion</a>
+                </div>
+                <div class="category-item">
+                    <img src="art.jpeg" alt="Art">
+                    <a href="shop.html" class="btn">Art</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- More categories... -->
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Example product item -->
+                <div class="product-item">
+                    <img src="prod2.jpeg" alt="Handmade Vase">
+                    <h3>Daily Use</h3>
+                    <p>$40.00</p>
+                    <a href="product.html" class="btn">Add to Cart</a>
+                </div>
+                <!-- More products... -->
+            </div>
+        </section>
+
+        <section class="artisan-stories">
+            <h2>Meet the Artisans</h2>
+            <div class="artisan-grid">
+                <!-- Example artisan item -->
+                <div class="artisan-item">
+                    <img src="art.jpeg" alt="Artisan 1">
+                    <h3>Jane Doe</h3>
+                    <p>Crafting unique painting with a modern twist.</p>
+                    <a href="artisan.html" class="btn">View Profile</a>
+                </div>
+                <!-- More artisans... -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 UrbanCrafts. All rights reserved.</p>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartBtns = document.querySelectorAll('.product-grid .btn');
+            cartBtns.forEach(btn => {
+                btn.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    alert('Item added to cart!');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
